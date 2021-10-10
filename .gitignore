@@ -12,6 +12,8 @@ examples/build/*
 examples/*/Debug/*
 examples/*/Release/*
 examples/*/x64/*
+bin-obj/*
+bin/*
 
 ## Visual Studio artifacts
 .vs
@@ -25,6 +27,7 @@ ipch
 *.suo
 *.VC.db
 *.VC.VC.opendb
+*.vcxproj
 
 ## Commonly used CMake directories
 /build*/
