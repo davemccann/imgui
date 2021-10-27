@@ -12,7 +12,13 @@ project "ImGui"
       ["Release"] = "ReleaseStatic"
     }
 
+    includedirs {
+        "$(ProjectDir)"
+    }
+
     files {
+        "misc/cpp/imgui_stdlib.h",
+        "misc/cpp/imgui_stdlib.cpp",
         "imconfig.h",
         "imgui.h",
         "imgui.cpp",
