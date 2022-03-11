@@ -36,6 +36,10 @@ project "ImGui"
         system "Windows"
         staticruntime "On"
 
-    filter "configurations:Release"
+    filter "configurations:Debug*"
+        runtime "Debug"
+        symbols "On"
+
+    filter "configurations:Release*"
+        runtime "Release"
         optimize "Speed"
-        buildoptions "/MT"
