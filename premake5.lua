@@ -5,10 +5,11 @@ project "ImGui"
     language "C++"
     cppdialect "C++17"
 
-    targetdir ("bin")
-    objdir ("bin-obj")
+    targetdir ("bin/" .. ConfigOutputPath)
+    objdir ("bin-obj/" .. ConfigOutputPath)
 
     configmap {
+      ["Debug"] = "DebugStatic",
       ["Release"] = "ReleaseStatic"
     }
 
