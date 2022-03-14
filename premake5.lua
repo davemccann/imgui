@@ -4,6 +4,7 @@ project "ImGui"
     kind "StaticLib"
     language "C++"
     cppdialect "C++17"
+    staticruntime "Off"
 
     targetdir ("bin/" .. ConfigOutputPath)
     objdir ("bin-obj/" .. ConfigOutputPath)
@@ -35,7 +36,6 @@ project "ImGui"
 
     filter "platforms:x64"
         system "Windows"
-        staticruntime "On"
 
     filter "configurations:Debug*"
         runtime "Debug"
